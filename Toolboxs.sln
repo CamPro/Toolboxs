@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveSublimeText", "ActiveSublimeText\ActiveSublimeText.csproj", "{FCF78B65-48F8-44E3-A288-605A1F60A3CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearChromeCache", "ClearChromeCache\ClearChromeCache.csproj", "{F3091014-A429-40BB-AF85-9BCBDA6557E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3091014-A429-40BB-AF85-9BCBDA6557E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3091014-A429-40BB-AF85-9BCBDA6557E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3091014-A429-40BB-AF85-9BCBDA6557E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3091014-A429-40BB-AF85-9BCBDA6557E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
