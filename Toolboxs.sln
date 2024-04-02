@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveSublimeText", "ActiveSublimeText\ActiveSublimeText.csproj", "{FCF78B65-48F8-44E3-A288-605A1F60A3CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E718B0F8-59FC-4922-BD08-296CB8A650D8}
+	EndGlobalSection
+EndGlobal
