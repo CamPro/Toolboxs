@@ -13,7 +13,7 @@ namespace ClearChromeCache
         static void Main()
         {
             FolderBrowserDialog dialog = new FolderBrowserDialog();
-            dialog.RootFolder = Environment.SpecialFolder.LocalApplicationData;
+            //dialog.RootFolder = Environment.SpecialFolder.LocalApplicationData;
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 string folder = dialog.SelectedPath;
