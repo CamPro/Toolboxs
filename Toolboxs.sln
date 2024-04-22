@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashFile", "HashFile\HashFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupRestoreChromeProfiles", "BackupRestoreChromeProfiles\BackupRestoreChromeProfiles.csproj", "{5AC2C0E9-970D-4718-8DF9-4DCB9140B0BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupChromeProfiles", "BackupChromeProfiles\BackupChromeProfiles.csproj", "{7765F341-8376-4F1F-A2A4-0D5A2F2CC091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5AC2C0E9-970D-4718-8DF9-4DCB9140B0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AC2C0E9-970D-4718-8DF9-4DCB9140B0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC2C0E9-970D-4718-8DF9-4DCB9140B0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7765F341-8376-4F1F-A2A4-0D5A2F2CC091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7765F341-8376-4F1F-A2A4-0D5A2F2CC091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7765F341-8376-4F1F-A2A4-0D5A2F2CC091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7765F341-8376-4F1F-A2A4-0D5A2F2CC091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
