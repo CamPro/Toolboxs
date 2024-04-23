@@ -69,6 +69,7 @@ namespace BackupRestoreChromeProfiles
                         }
                         catch (Exception ex)
                         {
+                            File.AppendAllText("error.txt", ex.Message + Environment.NewLine);
 #if DEBUG
                             MessageBox.Show(ex.Message);
 #endif
@@ -78,6 +79,7 @@ namespace BackupRestoreChromeProfiles
             }
             catch (Exception ex)
             {
+                File.AppendAllText("error.txt", ex.Message + Environment.NewLine);
 #if DEBUG
                 MessageBox.Show(ex.Message);
 #endif
@@ -135,6 +137,7 @@ namespace BackupRestoreChromeProfiles
                         }
                         catch (Exception ex)
                         {
+                            File.AppendAllText("error.txt", ex.Message + Environment.NewLine);
 #if DEBUG
                             MessageBox.Show(ex.Message);
 #endif
@@ -144,6 +147,7 @@ namespace BackupRestoreChromeProfiles
             }
             catch (Exception ex)
             {
+                File.AppendAllText("error.txt", ex.Message + Environment.NewLine);
 #if DEBUG
                 MessageBox.Show(ex.Message);
 #endif

@@ -49,6 +49,7 @@ namespace BackupRestoreChromeProfiles
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 textUserdata.Text = dialog.SelectedPath;
+                GetAllProfiles();
             }
         }
 
