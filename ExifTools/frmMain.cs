@@ -251,7 +251,10 @@ namespace ExifTools
 
         private void buttonOpenFolder_Click(object sender, EventArgs e)
         {
-            Process.Start(metaFolder);
+            if (Directory.Exists(metaFolder))
+            {
+                Process.Start(metaFolder);
+            }
         }
 
         private void buttonExifCopy_Click(object sender, EventArgs e)
