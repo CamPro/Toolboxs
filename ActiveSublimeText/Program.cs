@@ -16,6 +16,15 @@ namespace ActiveSublimeText
         static void Main()
         {
             string sublime = "C:\\Program Files\\Sublime Text\\sublime_text.exe";
+            if (!File.Exists(sublime))
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.InitialDirectory = "C:\\Program Files";
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    sublime = dialog.FileName;
+                }
+            }
             if (File.Exists(sublime))
             {
                 // kill process
