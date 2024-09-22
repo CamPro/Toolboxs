@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ActiveSublimeText")]
+[assembly: AssemblyTitle("ActiveSublime")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ActiveSublimeText")]
+[assembly: AssemblyProduct("ActiveSublime")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fcf78b65-48f8-44e3-a288-605a1f60a3ce")]
+[assembly: Guid("350c6d6a-989e-4189-9f93-09560d18f374")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveSublimeText", "ActiveSublimeText\ActiveSublimeText.csproj", "{FCF78B65-48F8-44E3-A288-605A1F60A3CE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearChromeCache", "ClearChromeCache\ClearChromeCache.csproj", "{F3091014-A429-40BB-AF85-9BCBDA6557E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashFile", "HashFile\HashFile.csproj", "{11D9100C-F484-487A-8A40-BAC0F951B17A}"
@@ -17,16 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolLeechTruyenFull", "Tool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExifTools", "ExifTools\ExifTools.csproj", "{0B899CC7-3EE9-4B11-A20C-F437B0F4A0AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveSublime", "ActiveSublime\ActiveSublime.csproj", "{350C6D6A-989E-4189-9F93-09560D18F374}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCF78B65-48F8-44E3-A288-605A1F60A3CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3091014-A429-40BB-AF85-9BCBDA6557E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3091014-A429-40BB-AF85-9BCBDA6557E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3091014-A429-40BB-AF85-9BCBDA6557E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{0B899CC7-3EE9-4B11-A20C-F437B0F4A0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B899CC7-3EE9-4B11-A20C-F437B0F4A0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B899CC7-3EE9-4B11-A20C-F437B0F4A0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350C6D6A-989E-4189-9F93-09560D18F374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350C6D6A-989E-4189-9F93-09560D18F374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350C6D6A-989E-4189-9F93-09560D18F374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350C6D6A-989E-4189-9F93-09560D18F374}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
