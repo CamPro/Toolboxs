@@ -48,9 +48,9 @@
             this.buttonForBuild4180.Location = new System.Drawing.Point(13, 13);
             this.buttonForBuild4180.Margin = new System.Windows.Forms.Padding(4);
             this.buttonForBuild4180.Name = "buttonForBuild4180";
-            this.buttonForBuild4180.Size = new System.Drawing.Size(160, 40);
+            this.buttonForBuild4180.Size = new System.Drawing.Size(176, 40);
             this.buttonForBuild4180.TabIndex = 0;
-            this.buttonForBuild4180.Text = "for Build 4180, 4192";
+            this.buttonForBuild4180.Text = "for Build 4180 to 4192";
             this.buttonForBuild4180.UseVisualStyleBackColor = true;
             this.buttonForBuild4180.Click += new System.EventHandler(this.buttonForBuild4180_Click);
             // 
