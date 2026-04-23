@@ -90,5 +90,22 @@ namespace ActiveSublime
 
             Environment.Exit(0);
         }
+
+        private void buttonForBuild4200_Click(object sender, EventArgs e)
+        {
+            if (!File.Exists(sublime)) return;
+
+            string hexexe = ReadFileAsHexString(sublime);
+
+            // for Build 4180
+            hexexe = hexexe.Replace("0F B6 51 05 83 F2 01", "C6 41 05 01 B2 00 90"); // Unlimited User License
+
+            WriteHexStringAsBinaryToFile(hexexe, sublime);
+
+            // finish
+            Process.Start(sublime);
+
+            Environment.Exit(0);
+        }
     }
 }

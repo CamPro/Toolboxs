@@ -30,6 +30,7 @@
         {
             this.buttonForBuild4169 = new System.Windows.Forms.Button();
             this.buttonForBuild4180 = new System.Windows.Forms.Button();
+            this.buttonForBuild4200 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonForBuild4169
@@ -54,11 +55,23 @@
             this.buttonForBuild4180.UseVisualStyleBackColor = true;
             this.buttonForBuild4180.Click += new System.EventHandler(this.buttonForBuild4180_Click);
             // 
+            // buttonForBuild4200
+            // 
+            this.buttonForBuild4200.Location = new System.Drawing.Point(230, 13);
+            this.buttonForBuild4200.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonForBuild4200.Name = "buttonForBuild4200";
+            this.buttonForBuild4200.Size = new System.Drawing.Size(176, 40);
+            this.buttonForBuild4200.TabIndex = 2;
+            this.buttonForBuild4200.Text = "for Build 4200";
+            this.buttonForBuild4200.UseVisualStyleBackColor = true;
+            this.buttonForBuild4200.Click += new System.EventHandler(this.buttonForBuild4200_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 106);
+            this.ClientSize = new System.Drawing.Size(437, 106);
+            this.Controls.Add(this.buttonForBuild4200);
             this.Controls.Add(this.buttonForBuild4180);
             this.Controls.Add(this.buttonForBuild4169);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,6 +88,7 @@
 
         private System.Windows.Forms.Button buttonForBuild4169;
         private System.Windows.Forms.Button buttonForBuild4180;
+        private System.Windows.Forms.Button buttonForBuild4200;
     }
 }
 
