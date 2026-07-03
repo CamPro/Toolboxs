@@ -40,21 +40,30 @@ namespace BackupChromeProfiles
 
         private void buttonOpenUserdata_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.ValidateNames = false;
+            dialog.CheckFileExists = false;
+            dialog.CheckPathExists = true;
+            dialog.FileName = "Select Folder";
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                textUserdata.Text = dialog.SelectedPath;
-                GetAllProfiles();
+                textUserdata.Text = Path.GetDirectoryName(dialog.FileName);
             }
+            dialog.Dispose();
         }
 
         private void buttonOpenSave_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.ValidateNames = false;
+            dialog.CheckFileExists = false;
+            dialog.CheckPathExists = true;
+            dialog.FileName = "Select Folder";
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                textSave.Text = dialog.SelectedPath;
+                textSave.Text = Path.GetDirectoryName(dialog.FileName);
             }
+            dialog.Dispose();
         }
 
         private void buttonOpenUserdataFolder_Click(object sender, EventArgs e)

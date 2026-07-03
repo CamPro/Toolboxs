@@ -1,25 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ActiveSublime
 {
     public partial class frmMain : Form
     {
-
-        string sublime = "C:\\Program Files\\Sublime Text\\sublime_text.exe";
+        readonly string sublimeFolder = @"C:\Program Files\Sublime Text";
+        readonly string sublimePath = @"C:\Program Files\Sublime Text\sublime_text.exe";
 
         public frmMain()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -29,14 +26,30 @@ namespace ActiveSublime
 
         private void frmMain_Shown(object sender, EventArgs e)
         {
+            if (File.Exists(sublimePath))
+            {
+                textSublimePath.Text = sublimePath;
+            }
+        }
+
+        private void buttonBrowserSublime_Click(object sender, EventArgs e)
+        {
             OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Title = "Select sublime_text.exe";
             dialog.FileName = "sublime_text.exe";
-            dialog.InitialDirectory = "C:\\Program Files\\Sublime Text";
+            dialog.Filter = "Executable Files (*.exe)|*.exe|All Files (*.*)|*.*";
+            if (Directory.Exists(sublimeFolder))
+            {
+                dialog.InitialDirectory = sublimeFolder;
+            }
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                sublime = dialog.FileName;
+                textSublimePath.Text = dialog.FileName;
             }
-            // kill process
+        }
+
+        static void KillSublime()
+        {
             Process[] sublimes = Process.GetProcessesByName("sublime_text");
             foreach (Process process in sublimes) { process.Kill(); }
         }
@@ -59,53 +72,66 @@ namespace ActiveSublime
 
         private void buttonForBuild4169_Click(object sender, EventArgs e)
         {
-            if (!File.Exists(sublime)) return;
+            string sltFileName = textSublimePath.Text;
 
-            string hexexe = ReadFileAsHexString(sublime);
+            if (!File.Exists(sltFileName)) return;
+
+            KillSublime();
+
+            string hexexe = ReadFileAsHexString(sltFileName);
 
             // for Build 4169 to lower
             hexexe = hexexe.Replace("80 78 05 00 0F 94 C1", "C6 40 05 01 48 85 C9"); // Unlimited User License
 
-            WriteHexStringAsBinaryToFile(hexexe, sublime);
+            WriteHexStringAsBinaryToFile(hexexe, sltFileName);
 
             // finish
-            Process.Start(sublime);
+            Process.Start(sltFileName);
 
             Environment.Exit(0);
         }
 
         private void buttonForBuild4180_Click(object sender, EventArgs e)
         {
-            if (!File.Exists(sublime)) return;
+            string sltFileName = textSublimePath.Text;
 
-            string hexexe = ReadFileAsHexString(sublime);
+            if (!File.Exists(sltFileName)) return;
+
+            KillSublime();
+
+            string hexexe = ReadFileAsHexString(sltFileName);
 
             // for Build 4180
             hexexe = hexexe.Replace("80 79 05 00 0F 94 C2", "C6 41 05 01 B2 00 90"); // Unlimited User License
 
-            WriteHexStringAsBinaryToFile(hexexe, sublime);
+            WriteHexStringAsBinaryToFile(hexexe, sltFileName);
 
             // finish
-            Process.Start(sublime);
+            Process.Start(sltFileName);
 
             Environment.Exit(0);
         }
 
         private void buttonForBuild4200_Click(object sender, EventArgs e)
         {
-            if (!File.Exists(sublime)) return;
+            string sltFileName = textSublimePath.Text;
 
-            string hexexe = ReadFileAsHexString(sublime);
+            if (!File.Exists(sltFileName)) return;
+
+            KillSublime();
+
+            string hexexe = ReadFileAsHexString(sltFileName);
 
             // for Build 4180
             hexexe = hexexe.Replace("0F B6 51 05 83 F2 01", "C6 41 05 01 B2 00 90"); // Unlimited User License
 
-            WriteHexStringAsBinaryToFile(hexexe, sublime);
+            WriteHexStringAsBinaryToFile(hexexe, sltFileName);
 
             // finish
-            Process.Start(sublime);
+            Process.Start(sltFileName);
 
             Environment.Exit(0);
         }
+
     }
 }

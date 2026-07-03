@@ -36,10 +36,10 @@
             this.buttonOpenUserdata = new System.Windows.Forms.Button();
             this.textUserdata = new System.Windows.Forms.TextBox();
             this.dataGridProfile = new System.Windows.Forms.DataGridView();
+            this.buttonBackup = new System.Windows.Forms.Button();
             this._stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._profile = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._fullpath = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonBackup = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,6 +113,16 @@
             this.dataGridProfile.Size = new System.Drawing.Size(660, 337);
             this.dataGridProfile.TabIndex = 7;
             // 
+            // buttonBackup
+            // 
+            this.buttonBackup.Location = new System.Drawing.Point(12, 12);
+            this.buttonBackup.Name = "buttonBackup";
+            this.buttonBackup.Size = new System.Drawing.Size(150, 40);
+            this.buttonBackup.TabIndex = 6;
+            this.buttonBackup.Text = "Backup";
+            this.buttonBackup.UseVisualStyleBackColor = true;
+            this.buttonBackup.Click += new System.EventHandler(this.buttonBackup_Click);
+            // 
             // _stt
             // 
             this._stt.DataPropertyName = "_stt";
@@ -127,7 +137,7 @@
             this._profile.HeaderText = "Profile";
             this._profile.Name = "_profile";
             this._profile.ReadOnly = true;
-            this._profile.Width = 150;
+            this._profile.Width = 130;
             // 
             // _fullpath
             // 
@@ -136,16 +146,6 @@
             this._fullpath.Name = "_fullpath";
             this._fullpath.ReadOnly = true;
             this._fullpath.Width = 425;
-            // 
-            // buttonBackup
-            // 
-            this.buttonBackup.Location = new System.Drawing.Point(12, 12);
-            this.buttonBackup.Name = "buttonBackup";
-            this.buttonBackup.Size = new System.Drawing.Size(150, 40);
-            this.buttonBackup.TabIndex = 6;
-            this.buttonBackup.Text = "Backup";
-            this.buttonBackup.UseVisualStyleBackColor = true;
-            this.buttonBackup.Click += new System.EventHandler(this.buttonBackup_Click);
             // 
             // frmMain
             // 
@@ -182,10 +182,10 @@
         private System.Windows.Forms.Button buttonOpenUserdata;
         private System.Windows.Forms.TextBox textUserdata;
         private System.Windows.Forms.DataGridView dataGridProfile;
+        private System.Windows.Forms.Button buttonBackup;
         private System.Windows.Forms.DataGridViewTextBoxColumn _stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn _profile;
         private System.Windows.Forms.DataGridViewTextBoxColumn _fullpath;
-        private System.Windows.Forms.Button buttonBackup;
     }
 }
 
