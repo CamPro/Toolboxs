@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveSublime", "ActiveSubl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPlayerRandom", "MediaPlayerRandom\MediaPlayerRandom.csproj", "{FCA9036A-7A54-40A6-BA64-66D51710CBDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixChromeWindowsAllProfile", "FixChromeWindowsAllProfile\FixChromeWindowsAllProfile.csproj", "{7082F99B-8E19-4349-A293-AC646CF5ACB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{FCA9036A-7A54-40A6-BA64-66D51710CBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCA9036A-7A54-40A6-BA64-66D51710CBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCA9036A-7A54-40A6-BA64-66D51710CBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7082F99B-8E19-4349-A293-AC646CF5ACB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7082F99B-8E19-4349-A293-AC646CF5ACB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7082F99B-8E19-4349-A293-AC646CF5ACB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7082F99B-8E19-4349-A293-AC646CF5ACB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
