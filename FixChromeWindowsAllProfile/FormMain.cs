@@ -32,8 +32,8 @@ namespace FixChromeWindowsAllProfile
 
                 objs["browser"]["window_placement"]["left"] = 0;
                 objs["browser"]["window_placement"]["top"] = 0;
-                objs["browser"]["window_placement"]["right"] = Screen.PrimaryScreen.Bounds.Width;
-                objs["browser"]["window_placement"]["bottom"] = Screen.PrimaryScreen.Bounds.Height - 40;
+                objs["browser"]["window_placement"]["right"] = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width * 0.7);
+                objs["browser"]["window_placement"]["bottom"] = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height * 0.7);
                 objs["browser"]["window_placement"]["maximized"] = true;
 
                 jsontext = objs.ToString();
