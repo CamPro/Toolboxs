@@ -57,6 +57,7 @@ class Program
         int leftWidth = screenWidth / 2 + 8 + 6;
         int leftHeight = screenHeight + 6;
         AutoItX.WinMove(leftHandle, leftX, leftY, leftWidth, leftHeight);
+        AutoItX.WinSetState(leftHandle, AutoItX.SW_MINIMIZE); // minimize left
         Thread.Sleep(100);
 
         // Nửa bên phải
@@ -70,6 +71,8 @@ class Program
         int rightWidth = screenWidth / 2 + 8 + 6;
         int rightHeight = screenHeight + 6;
         AutoItX.WinMove(rightHandle, rightX, rightY, rightWidth, rightHeight);
+
+        AutoItX.WinSetState(leftHandle, AutoItX.SW_RESTORE); // restore left
 
         string[] settings = new string[] { leftFolder, rightFolder };
         File.WriteAllLines(fileSettings, settings, System.Text.Encoding.UTF8);
