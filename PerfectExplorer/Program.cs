@@ -48,9 +48,9 @@ class Program
 
         // Nửa bên trái
         Process process1 = Process.Start("explorer.exe", leftFolder);
-        process1.WaitForInputIdle();
+        process1.WaitForInputIdle(3000);
         Thread.Sleep(200);
-        AutoItX.WinWaitActive(explorerClass);
+        AutoItX.WinWaitActive(explorerClass, "", 3);
         IntPtr leftHandle = AutoItX.WinGetHandle(explorerClass);
         int leftX = 0 - 8;
         int leftY = 0;
@@ -61,9 +61,9 @@ class Program
 
         // Nửa bên phải
         Process process2 = Process.Start("explorer.exe", rightFolder);
-        process2.WaitForInputIdle();
+        process2.WaitForInputIdle(3000);
         Thread.Sleep(200);
-        AutoItX.WinWaitActive(explorerClass);
+        AutoItX.WinWaitActive(explorerClass, "", 3);
         IntPtr rightHandle = AutoItX.WinGetHandle(explorerClass);
         int rightX = screenWidth / 2 - 8;
         int rightY = 0;
