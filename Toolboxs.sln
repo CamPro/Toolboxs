@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPlayerRandom", "MediaP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixChromeWindowsAllProfile", "FixChromeWindowsAllProfile\FixChromeWindowsAllProfile.csproj", "{7082F99B-8E19-4349-A293-AC646CF5ACB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfectExplorer", "PerfectExplorer\PerfectExplorer.csproj", "{5170F1DB-24BB-4DA3-ACA9-4A278632472C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{7082F99B-8E19-4349-A293-AC646CF5ACB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7082F99B-8E19-4349-A293-AC646CF5ACB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7082F99B-8E19-4349-A293-AC646CF5ACB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5170F1DB-24BB-4DA3-ACA9-4A278632472C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5170F1DB-24BB-4DA3-ACA9-4A278632472C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5170F1DB-24BB-4DA3-ACA9-4A278632472C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5170F1DB-24BB-4DA3-ACA9-4A278632472C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
