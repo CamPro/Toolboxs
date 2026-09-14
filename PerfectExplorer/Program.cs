@@ -57,7 +57,7 @@ class Program
         int leftWidth = screenWidth / 2 + 8 + 6;
         int leftHeight = screenHeight + 6;
         AutoItX.WinMove(leftHandle, leftX, leftY, leftWidth, leftHeight);
-        AutoItX.WinSetState(leftHandle, AutoItX.SW_MINIMIZE); // minimize left
+        AutoItX.WinActivate("[CLASS:Progman]"); // Kích hoạt màn hình Desktop -> Cửa sổ hiện tại sẽ tự động bị bỏ active
         Thread.Sleep(100);
 
         // Nửa bên phải
@@ -72,7 +72,7 @@ class Program
         int rightHeight = screenHeight + 6;
         AutoItX.WinMove(rightHandle, rightX, rightY, rightWidth, rightHeight);
 
-        AutoItX.WinSetState(leftHandle, AutoItX.SW_RESTORE); // restore left
+        AutoItX.WinActivate(leftHandle); // active left
 
         string[] settings = new string[] { leftFolder, rightFolder };
         File.WriteAllLines(fileSettings, settings, System.Text.Encoding.UTF8);
