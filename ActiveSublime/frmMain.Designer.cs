@@ -34,37 +34,38 @@
             this.buttonForBuild4200 = new System.Windows.Forms.Button();
             this.textSublimePath = new System.Windows.Forms.TextBox();
             this.buttonBrowserSublime = new System.Windows.Forms.Button();
+            this.buttonForBuild4213 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonForBuild4169
             // 
-            this.buttonForBuild4169.Location = new System.Drawing.Point(13, 148);
+            this.buttonForBuild4169.Location = new System.Drawing.Point(248, 145);
             this.buttonForBuild4169.Margin = new System.Windows.Forms.Padding(4);
             this.buttonForBuild4169.Name = "buttonForBuild4169";
             this.buttonForBuild4169.Size = new System.Drawing.Size(176, 40);
-            this.buttonForBuild4169.TabIndex = 4;
+            this.buttonForBuild4169.TabIndex = 6;
             this.buttonForBuild4169.Text = "for Build 4169 to lower";
             this.buttonForBuild4169.UseVisualStyleBackColor = true;
             this.buttonForBuild4169.Click += new System.EventHandler(this.buttonForBuild4169_Click);
             // 
             // buttonForBuild4180
             // 
-            this.buttonForBuild4180.Location = new System.Drawing.Point(13, 100);
+            this.buttonForBuild4180.Location = new System.Drawing.Point(248, 97);
             this.buttonForBuild4180.Margin = new System.Windows.Forms.Padding(4);
             this.buttonForBuild4180.Name = "buttonForBuild4180";
             this.buttonForBuild4180.Size = new System.Drawing.Size(176, 40);
-            this.buttonForBuild4180.TabIndex = 3;
+            this.buttonForBuild4180.TabIndex = 5;
             this.buttonForBuild4180.Text = "for Build 4180 to 4192";
             this.buttonForBuild4180.UseVisualStyleBackColor = true;
             this.buttonForBuild4180.Click += new System.EventHandler(this.buttonForBuild4180_Click);
             // 
             // buttonForBuild4200
             // 
-            this.buttonForBuild4200.Location = new System.Drawing.Point(13, 52);
+            this.buttonForBuild4200.Location = new System.Drawing.Point(248, 49);
             this.buttonForBuild4200.Margin = new System.Windows.Forms.Padding(4);
             this.buttonForBuild4200.Name = "buttonForBuild4200";
             this.buttonForBuild4200.Size = new System.Drawing.Size(176, 40);
-            this.buttonForBuild4200.TabIndex = 2;
+            this.buttonForBuild4200.TabIndex = 4;
             this.buttonForBuild4200.Text = "for Build 4200";
             this.buttonForBuild4200.UseVisualStyleBackColor = true;
             this.buttonForBuild4200.Click += new System.EventHandler(this.buttonForBuild4200_Click);
@@ -86,11 +87,23 @@
             this.buttonBrowserSublime.UseVisualStyleBackColor = true;
             this.buttonBrowserSublime.Click += new System.EventHandler(this.buttonBrowserSublime_Click);
             // 
+            // buttonForBuild4213
+            // 
+            this.buttonForBuild4213.Location = new System.Drawing.Point(13, 49);
+            this.buttonForBuild4213.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonForBuild4213.Name = "buttonForBuild4213";
+            this.buttonForBuild4213.Size = new System.Drawing.Size(176, 40);
+            this.buttonForBuild4213.TabIndex = 2;
+            this.buttonForBuild4213.Text = "for Build 4213";
+            this.buttonForBuild4213.UseVisualStyleBackColor = true;
+            this.buttonForBuild4213.Click += new System.EventHandler(this.buttonForBuild4213_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 198);
+            this.Controls.Add(this.buttonForBuild4213);
             this.Controls.Add(this.buttonBrowserSublime);
             this.Controls.Add(this.textSublimePath);
             this.Controls.Add(this.buttonForBuild4200);
@@ -115,6 +128,7 @@
         private System.Windows.Forms.Button buttonForBuild4200;
         private System.Windows.Forms.TextBox textSublimePath;
         private System.Windows.Forms.Button buttonBrowserSublime;
+        private System.Windows.Forms.Button buttonForBuild4213;
     }
 }
 

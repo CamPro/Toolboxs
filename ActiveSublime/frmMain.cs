@@ -133,5 +133,25 @@ namespace ActiveSublime
             Environment.Exit(0);
         }
 
+        private void buttonForBuild4213_Click(object sender, EventArgs e)
+        {
+            string sltFileName = textSublimePath.Text;
+
+            if (!File.Exists(sltFileName)) return;
+
+            KillSublime();
+
+            string hexexe = ReadFileAsHexString(sltFileName);
+
+            // for Build 4180
+            hexexe = hexexe.Replace("0F B6 51 0C 83 F2 01", "C6 41 0C 01 31 D2 90"); // Unlimited User License
+
+            WriteHexStringAsBinaryToFile(hexexe, sltFileName);
+
+            // finish
+            Process.Start(sltFileName);
+
+            Environment.Exit(0);
+        }
     }
 }
