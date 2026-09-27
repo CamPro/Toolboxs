@@ -94,7 +94,7 @@
             this.buttonForBuild4213.Name = "buttonForBuild4213";
             this.buttonForBuild4213.Size = new System.Drawing.Size(176, 40);
             this.buttonForBuild4213.TabIndex = 2;
-            this.buttonForBuild4213.Text = "for Build 4213";
+            this.buttonForBuild4213.Text = "for Build 4213, 4215";
             this.buttonForBuild4213.UseVisualStyleBackColor = true;
             this.buttonForBuild4213.Click += new System.EventHandler(this.buttonForBuild4213_Click);
             // 
